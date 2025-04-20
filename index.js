@@ -46,7 +46,6 @@ client.on('message_create', async message => {
 
         if (media.mimetype === 'image/webp') {
             console.log('skip');
-            //return;
         }
         else if (media.mimetype.startsWith('image')) {
             telegramBot.sendPhoto(telegramChatId, Buffer.from(media.data, 'base64'), { caption: 'You' });
