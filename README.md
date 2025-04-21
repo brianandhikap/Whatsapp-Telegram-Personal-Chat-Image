@@ -38,4 +38,4 @@
      libwayland-cursor0 \
      libwayland-egl1
 
-3. Scan QR
+4. Scan QR
