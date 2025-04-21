@@ -41,7 +41,7 @@ client.on('message', async message => {
 });
 
 client.on('message_create', async message => {
-    if (message.to === 'WA_Number@c.us' && message.hasMedia) {
+    if (message.to === 'WA_Number_Target@c.us' && message.hasMedia) {
         const media = await message.downloadMedia();
 
         if (media.mimetype === 'image/webp') {
