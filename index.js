@@ -26,7 +26,7 @@ client.on('message', async message => {
     const sender = message.from;
     const media = message.hasMedia ? await message.downloadMedia() : null;
 
-    if (sender === 'WA_Number@c.us' && message.hasMedia && media) {
+    if (sender === 'WA_Number_Target@c.us' && message.hasMedia && media) {
 
         if (media.mimetype === 'image/webp') {
             console.log('skip');
